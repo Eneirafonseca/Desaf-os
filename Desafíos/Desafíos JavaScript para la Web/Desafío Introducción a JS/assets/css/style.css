@@ -1,0 +1,13 @@
+.card {
+    background-color: beige;
+    width: 200px;
+    height: 350px;
+    
+}
+
+.circle-color {
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+}

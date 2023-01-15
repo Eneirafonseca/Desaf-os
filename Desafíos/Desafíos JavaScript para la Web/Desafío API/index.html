@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="cuadro">
+                <img src="./assets/images/stonks.png" alt="" height="150px">
+            </div>
+            <form>
+                <div class="form-group">
+                    <h1>Pesos CLP</h1>
+                    <input type="number" class="form-control" id="clpAmount" placeholder="Cantidad" min="1">
+                </div>
+                <div class="form-group">
+                    <h2>Moneda a convertir:</h2>
+                    <select class="form-control" id="selectCurrency">
+                        <option selected disabled>Seleccionar moneda </option>
+                    </select>
+                </div>
+            </form>
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary" id="currencyConvert">Convertir</button>
+            </div>
+            <h3>Resultado: <span id="totalConverted"></span></h3>
+        </div>
+    </div>
+    <div id="chartContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

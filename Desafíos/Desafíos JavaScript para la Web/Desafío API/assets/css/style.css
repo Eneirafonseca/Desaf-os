@@ -1,0 +1,63 @@
+
+.card {
+    width: 40%;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    background-color: burlywood;
+    padding: 2rem;
+}
+
+.cuadro {
+text-align: center;
+}
+
+
+input,
+select {
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 200px;
+    text-align: center;
+
+}
+
+.button-group {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+button[type="submit"] {
+    background-color: rgb(165, 112, 42);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #d96900;
+}
+
+.form-group {
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+}

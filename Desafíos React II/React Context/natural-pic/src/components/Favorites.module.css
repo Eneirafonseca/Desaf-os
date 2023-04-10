@@ -1,0 +1,76 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.cardWrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.photoCard {
+    border: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.photoCard:hover {
+    transform: translateY(-5px);
+}
+
+.photoImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cardBody {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    text-align: center;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.removeButton {
+    background-color: #f76b8a;
+    border-color: #f76b8a;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.removeButton:hover {
+    background-color: #f56a79;
+    border-color: #f56a79;
+}
+
+.favoriteIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filled {
+    color: #ff4d4d;
+}
+
+.cardWrapper:hover .favoriteIcon {
+    color: #ff4d4d;
+}
